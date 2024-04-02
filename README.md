@@ -1,5 +1,7 @@
 # mkdocs
 
+网站链接: [wxzhu.top](http://wxzhu.top)
+
 ## usage
 
 ``` bash
