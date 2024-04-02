@@ -1,0 +1,1 @@
+mkdocs build --clean && cp zxmh.png site/

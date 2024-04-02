@@ -1,0 +1,205 @@
+# [Navigtion]
+nav:
+  - Home: index.md
+  - cmake: cmake.md
+  - conda: conda.md
+  - docker: docker.md
+  - git: git.md
+  - vim: vim.md
+  - alias: alias.md
+  - ubuntu换源: ubuntu_apt.md
+  - linux命令: linux_command.md
+  - ssh免密登录: ssh_login.md
+  - ssh连接容器: ssh_docker.md
+  - 图床: photo_bed.md
+  - blog: blog.md
+  # - User Guide:
+  - mkdocs: usage.md
+
+# markdown_extensions:
+#   # - def_list
+# #   - pymdownx.tasklist:
+# #         custom_checkbox: true
+
+# # plugins:
+# #   - search:
+# #       lang:
+# #         - en
+# #         - ja
+
+# [Info]
+site_name: zwx's docs # 网站名字
+site_url: http://www.wxzhu.top/ # 网站地址
+site_author: zwx # 作者名
+
+# [UI]
+theme:
+  name: material # 主题
+  logo: zxmh.png
+  favicon: zxmh.png
+  # custom_dir: overrides
+  palette:
+    - scheme: default # 日间模式
+      primary: blue # 上方的
+      accent: cyan # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: black 
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+
+  features: 
+
+    - header.autohide  # 自动隐藏标题 
+
+    - announce.dismiss # 当用户单击该按钮时，当前公告将被关闭，并且不会再次显示，直到公告内容发生更改
+
+    # 导航
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.path # 导航路径
+    # - navigation.tabs # 顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    - toc.follow # 当启用目录的锚点跟随时，侧边栏会自动滚动，以便活动锚点始终可见
+    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - navigation.expand # 打开Tab时左侧目录全部展开
+    #- navigation.indexes # 启用章节索引页后，文档可以直接附加到章节，这对于提供概述页面特别有用
+    # - navigation.footer # 页脚可以包含指向当前页面的上一页和下一页的链接
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+
+    # 搜索
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    # - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
+
+    - content.code.copy # 代码复制
+
+  language: zh # 一些提示性的文字会变成中文
+
+
+  icon: 
+    repo: fontawesome/brands/github #右上角图标
+
+# edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://wenxin-zhu.github.io # 右上角点击跳转的链接
+repo_name: wenxin-zhu.github.io # 右上角的名字
+
+
+copyright: Copyright &copy; 2023 ZWX # 左下角的版权声明
+
+
+extra:
+  # generator: false  # 删除页脚显示“使用 MkDocs 材料制造”
+  social:
+  #   - icon: fontawesome/brands/twitter 
+  #     link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/github
+      link: https://github.com/wenxin-zhu
+    # - icon: fontawesome/brands/gitee
+    #   link: https://gitee.com/zxmh
+  #   - icon: fontawesome/brands/bilibili
+  #     link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+  #   - icon: fontawesome/solid/paper-plane
+  #     link: mailto:<1135801806@qq.com> #联系方式
+
+# cookie 
+#   analytics: 
+#     provider: google
+#     property: !ENV GOOGLE_ANALYTICS_KEY
+#     feedback:
+#       title: Was this page helpful?
+#       ratings:
+#         - icon: material/heart
+#           name: This page was helpful
+#           data: 1
+#           note: >-
+#             Thanks for your feedback!
+#         - icon: material/heart-broken
+#           name: This page could be improved
+#           data: 0
+#           note: >- 
+#             Thanks for your feedback! Help us improve this page by
+#             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+#   consent:
+#     title: Cookie consent
+#     description: >- 
+#       我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+#       如果你同意,你可以帮助我们让我们的网站更好~
+#     描述
+
+plugins:
+  - search
+  # - tags  #标签
+# markdown_extensions:
+# #   - abbr
+# #   - pymdownx.caret
+# #   - pymdownx.mark
+# #   - pymdownx.tilde
+# #   - md_in_html
+# #   - pymdownx.arithmatex:  # latex支持
+# #       generic: true
+# #   - toc:
+# #       permalink: true # 固定标题位置为当前位置
+#   - pymdownx.highlight: # 代码块高亮
+# #       anchor_linenums: true
+#       linenums: true # 显示行号
+# #       # auto_title: true # 显示编程语言名称
+#   - pymdownx.superfences # 代码块高亮插件
+# #   - pymdownx.inlinehilite
+# #   - pymdownx.snippets
+# #   - pymdownx.superfences
+# #   - attr_list
+# #   - pymdownx.emoji:
+# #       emoji_index: !!python/name:materialx.emoji.twemoji
+# #       emoji_generator: !!python/name:materialx.emoji.to_svg
+# #   - meta # 支持Markdown文件上方自定义标题标签等
+
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true # 显示行号
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+
+
+
