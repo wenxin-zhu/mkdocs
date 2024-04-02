@@ -15,6 +15,7 @@ nav:
   - blog: blog.md
   # - User Guide:
   - mkdocs: usage.md
+  - pdfs: pdfs.md
 
 # markdown_extensions:
 #   # - def_list
@@ -35,8 +36,8 @@ site_author: zwx # 作者名
 # [UI]
 theme:
   name: material # 主题
-  logo: zxmh.png
-  favicon: zxmh.png
+  logo: img/zxmh.png
+  favicon: imgzxmh.png
   # custom_dir: overrides
   palette:
     - scheme: default # 日间模式

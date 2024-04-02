@@ -10,5 +10,9 @@ pip install -r requirements.txt
 
 ```bash
 mkdocs serve
+
+```
+
+```bash
 mkdocs build --clean
 ```

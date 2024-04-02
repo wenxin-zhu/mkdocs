@@ -2,72 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://www.wxzhu.top/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/alias/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/blog/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/cmake/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/conda/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/docker/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/git/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/linux_command/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.wxzhu.top/pdfs/</loc>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/photo_bed/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/ssh_docker/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/ssh_login/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/ubuntu_apt/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/usage/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://www.wxzhu.top/vim/</loc>
-         <lastmod>2023-10-26</lastmod>
+         <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
