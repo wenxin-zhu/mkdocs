@@ -1,59 +1,27 @@
+# Docker 文档
 
-## 快速开始
+## 1 容器创建
 
-``` bash
-# 创建容器（gpu + mount）
-docker run -itd --gpus all --name <container_name> -v /home/zwx/<dir_name>:/home <image_name> /bin/bash
-# 启动容器
-docker start <container_name> & docker exec -it <container_name> bash
+``` shell
+docker run -dit \
+--gpus all \
+--shm-size 62g \
+-w /root \
+-v /home/zwx/model:/model \
+-h zwx_torch \
+--name zwx_torch \
+-p 20008:22\
+nvcr.io/nvidia/pytorch:22.09-py3
+# --net=host 
+# -e DISPLAY=$DISPLAY --privileged=true 
+# -v /dev:/dev
+
+docker exec -it zwx_torch bash
 ```
 
-## 安装工具
+## 2 docker命令
 
-``` bash
-# update !!!
-apt update
-apt install python python3-pip
-```
-
-[docker容器的导入和导出](https://blog.csdn.net/u014078109/article/details/126243823)
-
-[本地windows vscode远程连接服务器docker容器](https://blog.csdn.net/hxx123520/article/details/127527117)
-
-[Linux如何查看端口](https://blog.csdn.net/jiey0407/article/details/126433640)
-
-
-
-```bash
-# update !!!
-apt-get update
-# vim
-apt install vim
-# git
-apt install git
-# python
-apt-get install software-properties-common
-apt-get install python3.9 python3-pip
-```
-
-### 安装python3.9
-
-``` python
-apt-get update
-
-# "software-properties-common" 是一个软件包，该软件包提供了一些常用的工具和功能，用于管理软件源（repositories）和 PPA（Personal Package Archive）。
-apt-get install software-properties-common 
-
-# Install py39 from deadsnakes repository
-add-apt-repository ppa:deadsnakes/ppa
-
-apt-get install python3.9 python3-pip
-
-```
-
-## docker命令
-
-### 镜像（image）
+### 2.1 镜像（image）
 
 ```bash
 # 查看镜像文件
@@ -62,7 +30,7 @@ docker images
 docker rmi 镜像文件id
 ```
 
-### 容器（container）
+### 2.2 容器（container）
 
 ``` shell
 # 查看运行中的容器
@@ -96,11 +64,41 @@ docker kill 容器id
 docker inspect  容器id/image
 ```
 
-## 其他操作
-
-### 容器连接
+### 2.3 容器转移
 
 ``` shell
+# 容器转移
+# 容器打包为镜像
+docker commit -a “author” -m “the message” container_name image_name:tag
+# 将镜像打成tar包
+docker save -o name.tar image_name:tag
+# 文件的跨服务器传输
+scp name.tar zwx@192.168.1.151:/home/zwx/
+# 从tar包载入镜像
+docker load -i name.tar
+```
+
+### 2.4 其他实用命令
+
+``` bash
+docker ps -a | grep zwx
+```
+``` bash
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" -a
+```
+
+<!-- [docker容器的导入和导出](https://blog.csdn.net/u014078109/article/details/126243823)
+
+[本地windows vscode远程连接服务器docker容器](https://blog.csdn.net/hxx123520/article/details/127527117)
+
+[Linux如何查看端口](https://blog.csdn.net/jiey0407/article/details/126433640) -->
+
+
+<!-- ## 其他操作
+
+### 容器连接 -->
+
+<!-- ``` shell
 # 创建一个 python 应用的容器
 # -P :是容器内部端口随机映射到主机的端口
 docker run -d -P training/webapp python app.py
@@ -118,9 +116,9 @@ docker network create -d bridge test-net
 docker network ls
 # 运行一个容器并连接到新建的 test-net 网络
 docker run -itd --name test1 --network test-net ubuntu /bin/bash
-```
+``` -->
 
-### docker中使用nginx镜像布置静态网站
+<!-- ### docker中使用nginx镜像布置静态网站
 
 ```shell
 # 1.导入nginx镜像
@@ -144,9 +142,9 @@ root@e0d6fcaf179d:/usr/sbin # ./nginx
 [root@docker1 images]# curl 172.17.0.2
 # www.orange_lei.com
 # 这样一个静态网页就部署好了
-```
+``` -->
 
-```shell
+<!-- ```shell
 # 容器外
 docker run -d --name nginx01 -v /home/zwx/volume/nginx:/home -p 20101:80 nginx
 docker exec -it nginx01 /bin/bash
@@ -168,9 +166,9 @@ docker exec -it nginx01 /bin/bash
 
 # 更改文件
 cp /home/index.html /usr/share/nginx/html/index.html
-```
+``` -->
 
-### ubuntu_01
+<!-- ### ubuntu_01
 
 ```shell
 # 安装python
@@ -203,7 +201,7 @@ git clone https://github.com/ultralytics/yolov5.git
 apt install python3-pip
 pip3 -V
 pip3 install -r requirements.txt
-```
+``` -->
 
 
 

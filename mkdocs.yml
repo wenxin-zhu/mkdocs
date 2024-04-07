@@ -1,21 +1,25 @@
 # [Navigtion]
 nav:
   - Home: index.md
-  - cmake: cmake.md
-  - conda: conda.md
-  - docker: docker.md
-  - git: git.md
-  - vim: vim.md
-  - alias: alias.md
-  - ubuntu换源: ubuntu_apt.md
-  - linux命令: linux_command.md
-  - ssh免密登录: ssh_login.md
-  - ssh连接容器: ssh_docker.md
-  - 图床: photo_bed.md
-  - blog: blog.md
-  # - User Guide:
-  - mkdocs: usage.md
-  - pdfs: pdfs.md
+  - 工具文档:
+    - cmake: cmake.md
+    - conda: conda.md
+    - docker: docker.md
+    - git: git.md
+    - vim: vim.md
+  - 速查文档:
+    - alias: alias.md
+    - ubuntu换源: ubuntu_apt.md
+    - linux命令: linux_command.md
+  - 配置文档:
+    - ssh连接容器: ssh_docker.md
+    - ssh免密登录: ssh_login.md
+    - 图床: photo_bed.md
+  - 机试整理:
+    - STL.md
+  - 博客收藏: blog.md
+  - 论文收藏: pdfs.md
+  - 零碎知识: knowledge.md
 
 # markdown_extensions:
 #   # - def_list

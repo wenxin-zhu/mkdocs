@@ -2,6 +2,8 @@
 
 | name   | url  |
 | ---- | ---- |
+| 开往 travellings| <https://www.travellings.cn/go.html> |
+| 虫洞 wormhole| <https://www.foreverblog.cn/go.html> |
 |Wcowin的个人网站 |<https://wcowin.work/mymkdocs/>|
 |杨希杰的个人网站 |<https://yang-xijie.github.io/>|
 |綾香的 Blog     |<https://ayaka.shn.hk/>|
@@ -36,3 +38,5 @@
 |蝉時雨  |<https://www.chanshiyu.com/>|
 |赤茶    |<https://cynosura.one/>|
 |方圆喵的小站    |<https://blog.fangyan.ltd/>|
+https://cak.moe/
+https://www.thyuu.com/
