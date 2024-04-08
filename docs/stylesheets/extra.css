@@ -1,0 +1,34 @@
+body {
+    /* font-family: "LXGW WenKai", sans-serif; */
+    font-family: Arial;
+}
+
+.md-grid {
+max-width: 1440px; 
+}
+
+.md-typeset h1 {
+    margin: 0 0 0.75em;
+    color: #000000de;
+}
+
+.md-typeset h2 {
+    margin: 1em 0 .64em;
+}
+
+
+.md-sidebar__scrollwrap {
+    scrollbar-width: none;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+.md-footer-meta__inner {
+    display: none;
+}
+
+.md-nav__title {
+    display: none;
+}

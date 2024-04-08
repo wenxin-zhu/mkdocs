@@ -1,4 +1,6 @@
-# ssh 远程连接 docker 容器
+# ssh
+
+## ssh 远程连接 docker 容器
 
 ### 创建和运行容器
 
@@ -44,6 +46,13 @@ ip：宿主机ip
 用户名：root
 密码：passwd设置的密码
 ```
+
+
+## ssh免密登录
+
+windows用户目录下的.ssh目录下的id_rsa.pub为公钥
+
+将其上传到需要进行免密登录的用户的主目录下的.ssh文件夹中，并且重命名为authorized_keys，如：`/home/zwx/.ssh/authorized_keys`
 
 
 

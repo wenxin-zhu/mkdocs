@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
-{% block announce %}
+<!-- {% block announce %} -->
   <!-- Add announcement here, including arbitrary HTML -->
-  welcome to zwx's docs
+  <!-- welcome to zwx's docs -->
+<!-- {% endblock %} -->
+
+{% block styles %}
+<link rel="stylesheet" href="style.css"> 
+    {{ super() }}
 {% endblock %}
