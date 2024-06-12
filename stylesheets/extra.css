@@ -1,0 +1,186 @@
+/* 页面主体 */
+body {
+    font-family: Arial;
+    background-image: url("https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/1%20(5).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 页面滚动条 */
+html {
+    /* scrollbar-width: thin; */
+    scrollbar-width: none;
+}
+
+/* 隐藏页脚 */
+.md-footer-meta__inner {
+    display: none;
+}
+
+.md-typeset {
+    font-size: .7rem;
+}
+
+.md-nav {
+    font-size: .6rem;
+}
+
+.md-sidebar--primary {
+    width: 10%;
+}
+
+.md-sidebar--secondary {
+    width: 17%;
+}
+
+/* 一级标题 */
+.md-typeset h1 {
+    margin: 0;
+    color: #000000de;
+    font-weight: 600;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #000; 
+    margin-top: 0.1em; 
+    margin-bottom: 0.6em;
+}
+
+/* 二级标题 */
+.md-typeset h2 {
+    /* margin: 0.6em 0 0.6em; */
+    margin: 0.5em 0 0.5em;;
+    font-weight: 600;
+}
+
+.md-typeset h2+h3 {
+    margin: 0.3em 0 0.3em;
+    font-weight: 600;
+}
+
+.md-typeset h3 {
+    margin: 0.3em 0 0.3em;
+    font-weight: 600;
+}
+
+p {
+    margin: 0.5em 0 0.5em;
+}
+
+
+
+
+/* 通用设置 */
+:root {
+    --md-primary-fg-color: rgb(5, 103, 201);
+    /* 主颜色 */
+    --md-accent-fg-color: rgb(5, 103, 201);
+    /* 可交互元素颜色 */
+    --blur-background: rgba(255, 255, 255, 0.8);
+    /* 半透明的背景颜色 */
+    --blur-effect: blur(8px);
+    /* 高斯模糊效果 */
+    --border-color: rgba(255, 255, 255, 0.3);
+    /* 边框颜色 */
+    --border-radius: 5px;
+    /* 添加圆角 */
+}
+
+
+/* 主文本框 */
+.md-grid {
+    /* max-width: 1440px;  */
+    /* max-width: 1920px;  */
+    max-width: 70%;
+}
+
+/* body {
+    font-size: smaller;
+} */
+
+/* 主文本框 */
+.md-content__inner {
+    background-color: var(--blur-background);
+    backdrop-filter: var(--blur-effect);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin: 0;
+    padding: 8px 22px 8px 22px;
+}
+
+/* 左侧边栏 */
+.md-nav--primary {
+    background-color: var(--blur-background);
+    backdrop-filter: var(--blur-effect);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 6px 6px 6px 6px;
+}
+
+/* 右侧边栏 */
+.md-nav--secondary {
+    background-color: var(--blur-background);
+    backdrop-filter: var(--blur-effect);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 6px 6px 6px 6px;
+}
+
+
+/* 侧边栏与主文本框对齐 */
+.md-sidebar {
+    padding: 0;
+}
+
+
+/* 侧边栏滚动条 */
+.md-sidebar__scrollwrap {
+    scrollbar-width: none;
+}
+
+/* 隐藏目录标题 */
+.md-nav__title {
+    display: none;
+}
+
+/* 导航栏透明 */
+.md-header {
+    background-color: transparent;
+}
+
+/* 导航栏搜索框透明 */
+.md-search__form {
+    background-color: transparent;
+}
+
+/* 隐藏导航栏logo */
+.md-header__button.md-logo {
+    display: none;
+}
+
+/* 缩小github图标点击区域 */
+.md-source {
+    width: 40px;
+}
+
+/* 隐藏github链接 */
+.md-source__repository {
+    display: none;
+}
+
+/* 代码框 */
+.md-typeset code {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: small;
+}
+
+.md-typeset table:not([class]) {
+    background-color: transparent;
+}

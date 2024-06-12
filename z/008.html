@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>旋转立方体</title>
+    <style>
+      #cube {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotate 6s infinite linear;
+		margin: 100px auto;
+      }
+      
+      #cube div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 255, 255, 0.5);
+        border: 2px solid #333;
+      }
+      
+      #cube .front {
+        transform: translateZ(100px);
+      }
+      
+      #cube .back {
+        transform: rotateY(180deg) translateZ(100px);
+      }
+      
+      #cube .right {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      
+      #cube .left {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      
+      #cube .top {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      
+      #cube .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cube">
+      <div class="front"></div>
+      <div class="back"></div>
+      <div class="right"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <script>
+      const cube = document.querySelector('#cube');
+      let isPaused = false;
+      
+      cube.addEventListener('mouseover', () => {
+        isPaused = true;
+        cube.style.animationPlayState = 'paused';
+      });
+      
+      cube.addEventListener('mouseout', () => {
+        isPaused = false;
+        cube.style.animationPlayState = 'running';
+      });
+      
+      setInterval(() => {
+        if (!isPaused) {
+          cube.style.animationPlayState = 'running';
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
